@@ -1,14 +1,14 @@
-1.	Install epel-release repository in all machines
+1.Install epel-release repository in all machines
 # yum install epel-release -y
-2.	Install vim package in all 3 machines
+2.Install vim package in all 3 machines
 # yum install vim -y
-3. Generate ssh keys and copy it to all slave nodes using ssh-copy-id command. 
-4. Install Ansible in Ansible server
+3.Generate ssh keys and copy it to all slave nodes using ssh-copy-id command. 
+4.Install Ansible in Ansible server
 Login into ansible server using ansible user
 #sudo yum install ansible -y
-5. Edit hosts file under /etc/ansible directory with slave ip address as below. 
+5.Edit hosts file under /etc/ansible directory with slave ip address as below. 
 ## db-[99:101]-node.example.com
 [prod]
 X.X.XX.XXXX
-13. Test your ansible environment is correctly configured or not ?
+13.Test your ansible environment is correctly configured or not ?
 ansible all --list
