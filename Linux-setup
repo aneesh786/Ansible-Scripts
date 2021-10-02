@@ -6,3 +6,7 @@
 4. Install Ansible in Ansible server
 Login into ansible server using ansible user
 #sudo yum install ansible -y
+5. Edit hosts file under /etc/ansible directory with slave ip address as below. 
+## db-[99:101]-node.example.com
+[prod]
+X.X.XX.XXXX
