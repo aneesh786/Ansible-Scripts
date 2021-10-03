@@ -1,0 +1,12 @@
+---
+- name: install httpd
+  hosts: all
+  tasks:
+   - name: install httpd
+     zypper:
+         name: apache2
+         state: latest
+   - name: restart httpd
+     service:
+         name: apache2
+         state: restarted
