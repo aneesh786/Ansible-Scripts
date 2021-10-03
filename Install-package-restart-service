@@ -10,3 +10,15 @@
      service:
          name: apache2
          state: restarted
+         
+  ###To install multiple package, use below option###
+  
+- name: install httpd
+  hosts: all
+  tasks:
+   - name: install httpd
+     zypper:
+         name: 
+           - apache2
+           - unzip
+         state: latest
