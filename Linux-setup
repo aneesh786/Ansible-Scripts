@@ -14,3 +14,5 @@ X.X.XX.XXXX
 ansible all --list
 7. Test your client servers connectivity from ansible ?
 ansible all -m ping
+8. To run an ansible yaml file -->
+ansible-playbook httpd.yaml
