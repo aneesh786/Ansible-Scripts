@@ -16,3 +16,8 @@ ansible all --list
 ansible all -m ping
 8. To run an ansible yaml file -->
 ansible-playbook httpd.yaml
+9. Ansible doc commands to explore more on different ansible options -->
+ansible-doc -l
+ansible-doc -l | wc -l
+ansible-doc -l | grep package
+ansible-doc yum
