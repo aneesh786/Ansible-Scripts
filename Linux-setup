@@ -10,5 +10,7 @@ Login into ansible server using ansible user
 ## db-[99:101]-node.example.com
 [prod]
 X.X.XX.XXXX
-13.Test your ansible environment is correctly configured or not ?
+6.Test your ansible environment is correctly configured or not ?
 ansible all --list
+7. Test your client servers connectivity from ansible ?
+ansible all -m ping
